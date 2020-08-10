@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -7,31 +7,33 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/target.css" />
-
-    <title>Target</title>
+    <link rel="icon" type="image/png" href="../assets/Icons/Logo.png" />
+    <link rel="stylesheet" type="text/css" href="../css/notification.css" />
+    <title>Notification</title>
   </head>
   <body>
     <div>
       <div class="text">
-        <h1>Target</h1>
-        <p>Tentukan target waktu produktifmu dalam satu hari!</p>
+        <h1>
+          Notifikasi
+        </h1>
+        <p>
+          Tentukan waktu kamu mendapatkan notifikasi setiap harinya
+        </p>
       </div>
-      <div class="row">
-        <div id="angka" class="clock col-6">
-          <!-- Input waktu target produktif -->
+
+      <div class="row text-center">
+        <div id="hour" class="clock col-6">
           <input
             type="number"
-            id="target"
-            min="0"
+            id="myNumber"
+            min="00"
             max="23"
             value="00"
             style="
@@ -51,21 +53,39 @@
               evt.preventDefault();
             }
           </script>
-          <!-- Input Target -->
         </div>
-        <div id="jam" class="col-6">
-          <strong>jam</strong>
+        <div id="min" class="clock col-6">
+          <input
+            type="number"
+            id="myNumber"
+            min="00"
+            max="59"
+            value="00"
+            style="
+              width: 108px;
+              height: 96px;
+              background: rgba(0, 0, 0, 0);
+              border: none;
+              outline: none;
+              text-align: center;
+              font-weight: bold;
+            "
+            onkeypress="isInputNumber(event)"
+          />
+
+          <script>
+            function isInputNumber(evt) {
+              evt.preventDefault();
+            }
+          </script>
         </div>
-      </div>
-      <div class="icon">
-        <a href="notification.html">
-          <img src="../assets/Icons/Next.png" alt="Next Icon" />
-        </a>
+        <div class="icon text-center">
+          <a href="setting.html">
+            <img src="../assets/Icons/Next.png" alt="Next Icon" />
+          </a>
+        </div>
       </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -28,38 +28,61 @@
         </p>
       </div>
 
-      
       <div class="row text-center">
         <div id="hour" class="clock col-6">
-          <input type="number" id="myNumber" min="00" max="23" value="00" style="width:108px;
-           height: 96px; background: rgba(0,0,0,0); border:none; outline:none ;text-align:center;
-           font-weight:bold ;"onkeypress="isInputNumber(event)">
-          
+          <input
+            type="number"
+            id="myNumber"
+            min="00"
+            max="23"
+            value="00"
+            style="
+              width: 108px;
+              height: 96px;
+              background: rgba(0, 0, 0, 0);
+              border: none;
+              outline: none;
+              text-align: center;
+              font-weight: bold;
+            "
+            onkeypress="isInputNumber(event)"
+          />
+
           <script>
-              
-            function isInputNumber(evt)
-            {
+            function isInputNumber(evt) {
               evt.preventDefault();
             }
-
           </script>
         </div>
         <div id="min" class="clock col-6">
-          <input type="number" id="myNumber" min="00" max="59" value="00" style="width:108px;
-          height: 96px; background: rgba(0,0,0,0); border:none; outline:none ;text-align:center;
-          font-weight:bold ;"onkeypress="isInputNumber(event)">
+          <input
+            type="number"
+            id="myNumber"
+            min="00"
+            max="59"
+            value="00"
+            style="
+              width: 108px;
+              height: 96px;
+              background: rgba(0, 0, 0, 0);
+              border: none;
+              outline: none;
+              text-align: center;
+              font-weight: bold;
+            "
+            onkeypress="isInputNumber(event)"
+          />
 
           <script>
-              
-           function isInputNumber(evt)
-            {
+            function isInputNumber(evt) {
               evt.preventDefault();
             }
-                      
           </script>
         </div>
         <div class="icon text-center">
-          <img src="../assets/Icons/Next.png" alt="Next Icon" />
+          <a href="halo.html">
+            <img src="../assets/Icons/Next.png" alt="Next Icon" />
+          </a>
         </div>
       </div>
     </div>

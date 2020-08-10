@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="../assets/Icons/Logo.png" />
+    <link rel="stylesheet" type="text/css" href="../css/notification.css" />
+    <title>Produktif</title>
+  </head>
+  <body>
+    <div>
+      <div class="text">
+        <h1>
+          Produktif
+        </h1>
+        <p>
+          Kamu akan mengaktifkan mode produktif
+        </p>
+      </div>
+      <div class="text">
+        <p>
+          Durasi produktif kamu :
+        </p>
+      </div>
+      <div class="text-center">
+        <button onclick="clock()">Aktivasi</button>
+      </div>
+      <div class="row text-center">
+        <div id="hour" class="clock col-6">
+          <input type="number" id="inputhour" min="00" max="23" value="00" style="width:108px;
+           height: 96px; background: rgba(0,0,0,0); border:none; outline:none ;text-align:center;
+           font-weight:bold ;"onkeypress="isInputNumber(event)">
+          
+          <script>
+              
+            function isInputNumber(evt)
+            {
+              evt.preventDefault();
+            }
+
+          </script>
+        </div>
+        <div id="min" class="clock col-6">
+          <input type="number" id="inputmin" min="00" max="59" value="00" style="width:108px;
+          height: 96px; background: rgba(0,0,0,0); border:none; outline:none ;text-align:center;
+          font-weight:bold ;"onkeypress="isInputNumber(event)">
+
+          <script>
+              
+           function isInputNumber(evt)
+            {
+              evt.preventDefault();
+            }
+                      
+          </script>
+        </div>
+      
+        <div class="icon">
+          <a href="halo.html">
+            <img src="../assets/Icons/before.png" alt="Next Icon">
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Set the date we're counting down to
+      
+      var myTimer;
+      function clock() {
+          myTimer = setInterval(myClock, 1000);
+          
+          var hourtosecs = document.getElementById("inputhour").value;
+          var minutetosecs = document.getElementById("inputmin").value;
+          
+          //Menghitung total detik yang akan di countdown
+          var c = hourtosecs*3600 + minutetosecs*60
+      
+          function myClock() {
+              --c
+              var seconds = c % 60; // Seconds that cannot be written in minutes
+              var secondsInMinutes = (c - seconds) / 60; // Gives the seconds that COULD be given in minutes
+              var minutes = secondsInMinutes % 60; // Minutes that cannot be written in hours
+              var hours = (secondsInMinutes - minutes) / 60;
+              // Now in hours, minutes and seconds, you have the time you need.
+              document.getElementById("hour").innerHTML = hours
+              document.getElementById("min").innerHTML = minutes
+              //document.getElementById("demo").innerHTML = hours + ":" + minutes + ":" + seconds;
+              console.log(hours + ":" + minutes + ":" + seconds)
+              if (c == 0) {
+                  clearInterval(myTimer);
+              }
+          }
+      }
+      
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

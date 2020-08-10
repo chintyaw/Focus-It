@@ -1,22 +1,23 @@
 @font-face {
-    font-family: "Mulish";
-    src: url(/assets/fonts/Mulish-ExtraLight.ttf);
-  }
+  font-family: "Mulish";
+  src: url(/assets/fonts/Mulish-ExtraLight.ttf);
+}
 
-body{
-    background-color: #f8fff5;
+body {
+  background-color: #f8fff5;
+  font-family: "Mulish", sans-serif;
 }
 
 div {
-    margin: 30px;
+  margin: 30px;
 }
 
-div.text{
-    margin-left: 40%;
-    text-align: justify;
+div.text {
+  margin-left: 10%;
+  text-align: left;
 }
 
-div.main{
-    text-align: center;
-    margin: 50px;
+div.main {
+  text-align: center;
+  margin: 50px;
 }

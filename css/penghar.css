@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Mulish";
+  src: url(../assets/fonts/Mulish-ExtraLight.ttf);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background: #f8fff5;
+}
+
+.text {
+  font-family: "Mulish", sans-serif;
+padding: 0;
+margin: 60px 25px;
+}
+
+.clock {
+  width: 132px;
+  height: 116px;
+  text-align: center;
+  line-height: 105px;
+  font-size: 5em;
+  flex: inherit;
+  background-color: #A9F18A;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin: 15px ;
+  text-align: center;
+}
+
+.clock2 {
+  width: 132px;
+  height: 116px;
+  text-align: center;
+  line-height: 105px;
+  font-size: 5em;
+  flex: inherit;
+  background-color: #A9F18A;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin: 15px ;
+  text-align: center;
+}
+
+#angka {
+  margin-right: 3px;
+}
+#jam {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  align-items: flex-end;
+
+  color: #000000;
+  margin-left: 3px;
+}
+
+h1 {
+  margin: 12px 0;
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 32px;
+  line-height: 35px;
+  /* or 109% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+/* Tentukan target waktu produktifmu dalam satu hari! */
+
+.icon {
+  position: absolute;
+  bottom: 11px;
+  left: 40%;
+}

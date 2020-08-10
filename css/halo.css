@@ -21,3 +21,8 @@ div.main {
   text-align: center;
   margin: 50px;
 }
+div .icon {
+  position: absolute;
+  bottom: 11px;
+  left: 45%;
+}

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Mulish";
+    src: url(/assets/fonts/Mulish-ExtraLight.ttf);
+  }
+
+.text {
+    font-family: "Mulish", sans-serif;
+    padding: 0;
+    margin: 60px 25px;
+    
+}
+
+div.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

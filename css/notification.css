@@ -2,36 +2,40 @@
   font-family: "Mulish";
   src: url(/assets/fonts/Mulish-ExtraLight.ttf);
 }
+html,
 body {
-	background: #F8FFF5;
+  overflow-x: hidden;
+}
+body {
+  background: #f8fff5;
 }
 .text {
-	font-family: "Mulish", sans-serif;
-	padding: 0;
-	margin: 60px 25px;
+  font-family: "Mulish", sans-serif;
+  padding: 0;
+  margin: 60px 25px;
 }
 div h1 {
-	margin: 12px 0;
+  margin: 12px 0;
 }
 .clock {
-	background-color: #A9F18A;
-	border-radius: 25px;
-	text-align: center;
-	line-height: 105px;
-	font-size: 5em;
-	flex: inherit;
-	width: 132px;
-	height: 116px;
-	margin : 15px auto;
+  background-color: #a9f18a;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 105px;
+  font-size: 5em;
+  flex: inherit;
+  width: 132px;
+  height: 116px;
+  margin: 15px auto;
 }
 #hour {
-	margin-right: 3px;
+  margin-right: 3px;
 }
 #min {
-	margin-left: 3px;
+  margin-left: 3px;
 }
 div .icon {
-	position: absolute;
-	bottom: 11px;
-	left: 40%;
+  position: absolute;
+  bottom: 11px;
+  left: 45%;
 }

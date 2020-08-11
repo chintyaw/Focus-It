@@ -8,7 +8,7 @@ Kelompok 16: Productive
 16519371 Hafid Abi Daniswara
 16519203 Warren Gabriel Mulyawan
 16519215 Chintya Wijaya (desain prototype, front-end target)
-16519287 Moses Ananta
+16519287 Moses Ananta (front-end opening page,Menghubungkan web pages yang ada sesuai dengan alur, Quality control)
 16519289 Wildan Daffa Hafizh
 16519450 Yudi Alfayat
 16519480 Vincentius Samuel Gondokusumo

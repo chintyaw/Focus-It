@@ -3,7 +3,7 @@ Milestone 2 SPARTA 2019
 
 Kelompok 16: Productive
 16519023 Panegak Raya Pasaribu
-16519104 Aisyah Farras Aqila
+16519104 Aisyah Farras Aqila (desain prototype bagian setting)
 16519330 Karlsen Adiyasa Bachtiar
 16519371 Hafid Abi Daniswara
 16519203 Warren Gabriel Mulyawan (front-end notification, pengontak mentor, penyatu team)

@@ -11,7 +11,7 @@ Kelompok 16: Productive
 16519287 Moses Ananta (front-end opening page,Menghubungkan web pages yang ada sesuai dengan alur, Quality control)
 16519289 Wildan Daffa Hafizh
 16519450 Yudi Alfayat
-16519480 Vincentius Samuel Gondokusumo
+16519480 Vincentius Samuel Gondokusumo (pengontak penguji, pendemo)
 16519484 Jusuf Junior Athala
 16519487 Aria Bachrul Ulum Berlian
 
